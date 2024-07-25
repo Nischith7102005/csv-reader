@@ -1,0 +1,11 @@
+import csv
+
+def read_csv(file_name):
+    with open(file_name, 'r') as file:
+        reader = csv.reader(file)
+        for row in reader:
+            print(row)
+
+if __name__ == "__main__":
+    file_name = input("Enter a CSV file name: ")
+    read_csv(file_name)
